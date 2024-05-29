@@ -66,7 +66,21 @@ body {
                  2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect with offset and blur */
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .video-title {
+        font-size: 30px; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+}
 
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    .video-title {
+        font-size: 20px; /* Adjust font size for even smaller screens */
+        margin-bottom: 20px; /* Adjust margin for even smaller screens */
+    }
+}
 
 .video-wrapper {
     position: relative;
@@ -94,7 +108,7 @@ body {
     font-size: 10px;
 }
 
-/* Media query for smaller screens */
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     /* Adjust font size for smaller screens */
