@@ -1,0 +1,124 @@
+body {
+    background-image: url('/assets/images/movie-theater-4609877_1280.jpg'); /* Replace 'path/to/your-background-image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: white; /* Optional: makes text color white for better contrast */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+
+.site-header {
+    display: flex; /* Display as flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    background-color: #ff6347; /* Tomato background color */
+    color: white; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 60px; /* Increase font size for the header */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.header-image {
+    width: 80px; /* Set the width of the images */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 10px; /* Add some space between the image and the text */
+}
+
+@keyframes colorChange {
+    0% { color: yellow; }
+    50% { color: red; }
+    100% { color: yellow; }
+}
+
+.now-showing {
+    font-size: 1.5em; /* Increase font size */
+    background-color: blue; /* Background color */
+    padding: 10px 20px; /* Padding inside the element */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin: 20px 0; /* Space above and below the element */
+    text-align: center; /* Center the text */
+    animation: colorChange 1s infinite; /* Apply the animation */
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Center the video container and add some space around */
+    text-align: center;
+}
+
+.video-title {
+    margin-bottom: 10px; /* Space between title and video */
+    font-size: 30px; /* Increase font size for the title */
+    text-shadow: 0 0 10px black, /* Outer glow */
+                 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect with offset and blur */
+}
+
+
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-frame {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.site-footer {
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+.footer-text {
+    font-size: 10px;
+}
+
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust font size for smaller screens */
+    .site-header {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    /* Adjust styles for header images */
+    .header-image {
+        width: 40px; /* Decrease the size of the images for smaller screens */
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    /* Adjust font size for even smaller screens */
+    .site-header {
+        font-size: 25px; /* Adjust font size for even smaller screens */
+    }
+
+    /* Further adjustments for header images on even smaller screens */
+    .header-image {
+        width: 40px; /* Further decrease the size of the images for even smaller screens */
+        margin: 3px; /* Further adjust margin for even smaller screens */
+    }
+}
